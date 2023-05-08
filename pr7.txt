@@ -1,0 +1,68 @@
+Ejercicio 1 Utilizando el cálculo proposicional presentado en el teórico, demuestre las siguientes fórmulas.
+
+• 1) (P → Q) ∨ (Q → P).
+≡Def. de implicación x2
+(P ∨ Q ≡ Q) ∨ (Q ∨ P ≡ P)
+≡ A ∨ (B ≡ C) ≡ (A ∨ B) ≡ (A ∨ C)
+(P ∨ Q ≡ Q) ∨ (Q ∨ P) ≡ (P ∨ Q ≡ Q) ∨ P
+≡ A ∨ (B ≡ C) ≡ (A ∨ B) ≡ (A ∨ C)
+(Q ∨ P) ∨ (P ∨ Q) ≡ (Q ∨ P) ∨ Q ≡ P ∨ (P ∨ Q) ≡ (P ∨ Q)
+≡Asociatividad y conmutatividad de ∨
+Q ∨ Q ∨ P ∨ P ≡ P ∨ Q ∨ Q ≡ P ∨ P ∨ Q ≡ P ∨ Q
+≡Asociatividad de ∨
+(Q ∨ Q) ∨ (P ∨ P) ≡ P ∨ (Q ∨ Q) ≡ (P ∨ P) ∨ Q ≡ P ∨ Q
+≡Idempotencia de ∨
+Q ∨ P ≡ P ∨ Q ≡ P ∨ Q ≡ P ∨ Q
+≡Conmutatividad de ∨ 
+P ∨ Q ≡ P ∨ Q ≡ P ∨ Q ≡ P ∨ Q
+≡Neutro de ≡ 
+True
+
+• 2) P → Q ≡ ¬P ∨ Q .
+≡Def. de implicación
+(P ∨ Q ≡ Q) ≡ ¬P ∨ Q 
+≡ Asociatividad de ≡
+P ∨ Q ≡ (Q ≡ ¬P ∨ Q)) 
+≡ Def. de implicación
+P ∨ Q ≡ ¬P → Q
+
+PENDIENTE
+
+• 3) P ∨ (P ∧ Q) ≡ P
+≡ Regla dorada ≡
+P ∨ (P ≡ Q ≡ P ∨ Q) 
+≡ Distributividad de ∨
+P ∨ P ≡ P ∨ Q ≡ P ∨ (P ∨ Q) 
+≡Asociatividad ∨, Conmutatividad de ∨ y Asociatividad ∨ 
+P ∨ P ≡ P ∨ Q ≡ (P ∨ P) ∨ Q 
+≡ Idempotencia de ∨
+True ≡ P ∨ Q ≡ True ∨ Q 
+≡ Absorción ∨
+True ≡ P ∨ Q ≡ True 
+≡ Simetría ≡ 
+True ≡ True ≡ P ∨ Q 
+≡ Neutro ≡
+True ≡ P ∨ Q
+
+PENDIENTE
+
+Ejercicio 2 Recuerde el mundo de los caballeros y mentirosos. En este mundo
+hay dos clases de personas:
+• los caballerros que solo dicen la verdad.
+• los mentirosos que solo dicen mentiras.
+Suponiendo que encontramos una persona A en este mundo que nos dice una aserciÓn S. Esta situaci ́on es formalizada con la f ́ormula A ≡ S (intuitiva-mente A es un caballero si y solo si nos dice la verdad). Utilizando la l ́ogica proposicional, averig ̈ue (en caso de ser posible) quiénes son caballeros y quiénes mentirosos en los siguientes casos:
+• 1) A dice: yo soy un caballero y B es un mentiroso. S ≡ A ∧ not(B)
+• 2) A dice: yo soy un mentiroso y B es un caballero. S ≡ not(A) ∧ B
+• 3) A dice: yo soy un caballero y B es un caballero. S ≡ A  
+• 4) Nos encontramos con A y B, A dice: al menos uno de nosotros es un
+mentiroso S ≡ not (A ∧ B)
+• 5) A dice: yo soy un mentiroso o B es un caballero. S ≡
+• 6) Le preguntan a A si es un caballero. A responde:Si soy un caballero,
+entonces me comeré el sombrero. Demostrar que A se tiene que comer el sombrero.
+Ejercicio 3 Dada la definici ́on del cuantificador N :
+
+(N i : R.i : T.i) = (Pi : R.i ∧ T.i : 1)
+
+• 1) Enunciar y demostrar la regla de partici ́on de rango de la contatoria.
+• 2) Idem con la regla del rango vac ́ıo.
+• 3) Probar (Pi : R.i ∧ T.i : K) = K ∗ (N i : R.i : T.i)
